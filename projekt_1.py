@@ -81,7 +81,8 @@ while True:
     # list of values ​​from the assignment
     word_count = len(text.split())
     titlecase_words = sum(1 for word in text.split() if word.istitle())
-    uppercase_words = sum(1 for word in text.split() if word.isupper())
+    uppercase_words = sum(1 for word in text.split() 
+                            if word.isupper() and word.strip(string.punctuation).isalpha())
     lowercase_words = sum(1 for word in text.split() if word.islower())
     numeric_strings = sum(1 for word in text.split() if word.isdigit())
     sum_numbers = sum(int(word) for word in text.split() if word.isdigit())

@@ -88,12 +88,19 @@ while True:
     sum_numbers = sum(int(word) for word in text.split() if word.isdigit())
 
     # Outputs prints
+    print(50*'-')
     print(f"There are {word_count} words in the selected text.")
+    print(50*'-')
     print(f"There are {titlecase_words} titlecase words.")
+    print(50*'-')
     print(f"There are {uppercase_words} uppercase words.")
+    print(50*'-')
     print(f"There are {lowercase_words} lowercase words.")
+    print(50*'-')
     print(f"There are {numeric_strings} numeric strings.")
+    print(50*'-')
     print(f"The sum of all the numbers {sum_numbers}")
+    print(50*'*')
 
     # Counting word length frequency >>>> Graph
     length_frequencies = {}

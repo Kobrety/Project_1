@@ -110,7 +110,10 @@ while True:
             length = len(punctuation)
             length_frequencies[length] = length_frequencies.get(length, 0) + 1
 
-    max_length = max(length_frequencies.keys(), default=0)
+    if length_frequencies:
+        max_length = max(length_frequencies.keys())
+    else:
+        max_length = 0
 
     print("+", "-" * 26, "+")
     print(f"| {'LEN':<3}|{'OCCURRENCES':^17}|{'NR.':>4} |")
